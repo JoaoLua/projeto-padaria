@@ -93,22 +93,13 @@ python main.py
 
 ---
 
-## 🔑 Credenciais Padrão de Acesso
+## 🔑 Credenciais de Acesso Padrão
 
-Caso tenha rodado o script de simulação/população de dados (`simulador.py`), você pode acessar o sistema utilizando qualquer uma das credenciais abaixo:
+Após inicializar e rodar o simulador, você pode acessar o sistema utilizando a seguinte credencial padrão:
 
 *   **Administrador:**
-    *   **Login:** `tst`
+    *   **Login:** `admin`
     *   **Senha:** `123`
-*   **Caixa:**
-    *   **Login:** `joao`
-    *   **Senha:** `1234`
-*   **Gerente:**
-    *   **Login:** `maria`
-    *   **Senha:** `abc`
-*   **Caixa Simulação:**
-    *   **Login:** `caixa_simulador`
-    *   **Senha:** `simula123`
 
 ---
 
