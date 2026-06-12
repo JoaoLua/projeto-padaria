@@ -53,6 +53,8 @@ class FinanceiroView(ttk.Frame):
 
         btn_csv_d = ttk.Button(parent, text="⬇ Exportar CSV", command=exportar_despesas)
         btn_csv_d.pack(anchor="e", padx=5, pady=(0, 5))
+        
+    def _build_receitas(self, parent):
         frame_add = ttk.LabelFrame(parent, text=" Novo Recebimento ", padding=10)
         frame_add.pack(fill="x", pady=5)
         
