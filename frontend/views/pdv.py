@@ -2,6 +2,7 @@ import tkinter as tk
 from tkinter import ttk, messagebox
 from backend.produtos import listar_produtos
 from backend.vendas import registrar_venda
+from backend.exportacao import exportar_vendas, exportar_itens_venda
 
 class PDVView(ttk.Frame):
     def __init__(self, parent, controller):
@@ -57,6 +58,16 @@ class PDVView(ttk.Frame):
         
         btn_finalizar = ttk.Button(frame_fim, text="Finalizar Venda", command=self.finalizar_venda)
         btn_finalizar.pack(side="right", padx=10)
+
+        # Frame de exportação — abaixo da área de finalização
+        frame_export = ttk.LabelFrame(self, text=" Exportar Dados para Power BI ", padding=(10, 5))
+        frame_export.pack(fill="x", padx=10, pady=(0, 10))
+
+        ttk.Label(frame_export, text="Gera CSV com separador ';' (UTF-8) pronto para importar no Power BI:").pack(side="left", padx=5)
+        btn_exp_vendas = ttk.Button(frame_export, text="⬇ Vendas (resumo)", command=exportar_vendas)
+        btn_exp_vendas.pack(side="right", padx=5)
+        btn_exp_itens = ttk.Button(frame_export, text="⬇ Itens de Venda (detalhado)", command=exportar_itens_venda)
+        btn_exp_itens.pack(side="right", padx=5)
         
     def on_show(self):
         self.carregar_produtos()

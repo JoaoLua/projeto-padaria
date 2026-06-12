@@ -1,0 +1,21 @@
+﻿id_produto;nome;categoria;preco_venda;custo_producao
+1;Pão Francês 50g;Panificação;0,50;0,15
+2;Pão de Queijo Tradicional;Panificação;3,00;1,00
+3;Sonho de Creme;Panificação;5,50;1,90
+4;Croissant Presunto/Queijo;Panificação;7,50;2,50
+5;Coxinha de Frango;Perecíveis;6,00;2,00
+6;Esfiha de Carne Assada;Perecíveis;6,50;2,30
+7;Pão de Forma Artesanal;Panificação;8,00;2,80
+8;Bolo de Cenoura;Panificação;18,00;6,00
+9;Rosca de Coco Doce;Panificação;13,50;4,50
+10;Bolo de Chocolate;Panificação;22,00;7,50
+11;Café Espresso Carioca;Bebidas;4,50;1,10
+12;Água Mineral sem Gás 500ml;Bebidas;3,00;0,80
+13;Refrigerante Coca-Cola Lata;Bebidas;5,00;2,20
+14;Ice Tea Pêssego 450ml;Bebidas;5,50;2,40
+15;Suco de Uva Del Valle 1L;Bebidas;7,50;3,90
+16;Cerveja Heineken Lata 350ml;Bebidas;7,50;3,90
+17;Alfajor Artesanal;Secos;6,00;2,80
+18;Barra de Chocolate Lacta 90g;Secos;8,50;4,20
+19;Sacola Ecológica Retornável;Embalagens;2,50;0,60
+20;Saco de Gelo Cubo 5kg;Secos;12,00;4,50

@@ -1,0 +1,28 @@
+﻿id_produto;produto_nome;id_insumo;insumo_nome;unidade_medida;quantidade_necessaria
+1;Pão Francês 50g;1;Farinha de Trigo;KG;0,04
+2;Pão de Queijo Tradicional;3;Ovos;UN;0,40
+2;Pão de Queijo Tradicional;4;Manteiga;KG;0,01
+3;Sonho de Creme;1;Farinha de Trigo;KG;0,07
+3;Sonho de Creme;2;Açúcar Refinado;KG;0,03
+3;Sonho de Creme;3;Ovos;UN;0,50
+3;Sonho de Creme;4;Manteiga;KG;0,01
+4;Croissant Presunto/Queijo;1;Farinha de Trigo;KG;0,09
+4;Croissant Presunto/Queijo;4;Manteiga;KG;0,04
+5;Coxinha de Frango;1;Farinha de Trigo;KG;0,07
+5;Coxinha de Frango;4;Manteiga;KG;0,01
+6;Esfiha de Carne Assada;1;Farinha de Trigo;KG;0,07
+6;Esfiha de Carne Assada;4;Manteiga;KG;0,01
+7;Pão de Forma Artesanal;1;Farinha de Trigo;KG;0,35
+7;Pão de Forma Artesanal;4;Manteiga;KG;0,03
+8;Bolo de Cenoura;1;Farinha de Trigo;KG;0,20
+8;Bolo de Cenoura;2;Açúcar Refinado;KG;0,15
+8;Bolo de Cenoura;3;Ovos;UN;3,00
+8;Bolo de Cenoura;4;Manteiga;KG;0,05
+9;Rosca de Coco Doce;1;Farinha de Trigo;KG;0,24
+9;Rosca de Coco Doce;2;Açúcar Refinado;KG;0,09
+9;Rosca de Coco Doce;3;Ovos;UN;1,00
+9;Rosca de Coco Doce;4;Manteiga;KG;0,02
+10;Bolo de Chocolate;1;Farinha de Trigo;KG;0,22
+10;Bolo de Chocolate;2;Açúcar Refinado;KG;0,20
+10;Bolo de Chocolate;3;Ovos;UN;3,00
+10;Bolo de Chocolate;4;Manteiga;KG;0,06

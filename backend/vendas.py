@@ -100,6 +100,36 @@ def listar_vendas(data_inicio: int = None, data_fim: int = None) -> list[dict]:
         cursor.execute(query, params)
         return [dict(row) for row in cursor.fetchall()]
 
+def listar_todos_itens_venda() -> list[dict]:
+    """
+    Retorna todos os itens de todas as vendas em uma única query com JOIN.
+    Usado exclusivamente pelo exportar_tudo.py para performance —
+    evita N queries individuais (uma por venda).
+    """
+    with conectar() as conn:
+        conn.row_factory = sqlite3.Row
+        cursor = conn.cursor()
+        cursor.execute(
+            """
+            SELECT
+                v.id_venda,
+                v.data_venda,
+                u.nome  AS usuario_nome,
+                v.forma_pagamento,
+                p.nome  AS produto_nome,
+                iv.quantidade,
+                iv.valor_unitario,
+                iv.subtotal
+            FROM itens_venda iv
+            INNER JOIN vendas   v ON iv.id_venda   = v.id_venda
+            INNER JOIN produtos p ON iv.id_produto = p.id_produto
+            INNER JOIN usuarios u ON v.id_usuario  = u.id_usuario
+            ORDER BY v.id_venda;
+            """
+        )
+        return [dict(row) for row in cursor.fetchall()]
+
+
 def obter_detalhes_venda(id_venda: int) -> list[dict]:
     """
     Retorna os detalhes dos itens de uma venda específica (cupom fiscal),

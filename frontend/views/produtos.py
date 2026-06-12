@@ -3,6 +3,7 @@ from tkinter import ttk, messagebox
 from backend.produtos import listar_produtos, inserir_produto, vincular_ficha_tecnica, obter_ficha_tecnica
 from backend.categorias import listar_categorias_produto
 from backend.insumos import listar_insumos
+from backend.exportacao import exportar_produtos
 
 class ProdutosView(ttk.Frame):
     def __init__(self, parent, controller):
@@ -117,7 +118,10 @@ class ProdutosView(ttk.Frame):
             self.tree_prod.column(col, anchor="center")
         self.tree_prod.column("Nome", anchor="w", width=150)
         self.tree_prod.pack(fill="both", expand=True, pady=5)
-        
+
+        btn_csv = ttk.Button(f_lista, text="⬇ Exportar CSV", command=exportar_produtos)
+        btn_csv.pack(anchor="e", padx=5, pady=(0, 5))
+
         # Bind de seleção para mostrar a receita detalhada
         self.tree_prod.bind("<<TreeviewSelect>>", self.mostrar_detalhes_produto)
         

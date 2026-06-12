@@ -1,0 +1,15 @@
+﻿id;nome;descricao;tipo
+1;Panificação;Pães, bolos e doces fabricados na padaria;produto
+2;Laticínios;Leites, queijos, manteigas e iogurtes;produto
+3;Bebidas;Sucos, refrigerantes, águas e cafés;produto
+4;Secos;Mercearia de prateleira e doces industriais;produto
+5;Perecíveis;Salgados assados, lanches e frios;produto
+6;Limpeza;Produtos de higiene e limpeza do local;produto
+7;Embalagens;Sacolas, copos, papéis e caixas para viagem;produto
+1;Contas de Consumo;;SAIDA
+2;Fornecedores;;SAIDA
+3;Aluguel;;SAIDA
+4;Folha de Pagamento;;SAIDA
+5;Manutenção;;SAIDA
+6;Aporte de Capital;;ENTRADA
+7;Encomendas Especiais;;ENTRADA

@@ -1,6 +1,7 @@
 import tkinter as tk
 from tkinter import ttk, messagebox
 from backend.insumos import listar_insumos, inserir_insumo, atualizar_quantidade_insumo
+from backend.exportacao import exportar_estoque
 
 class EstoqueView(ttk.Frame):
     def __init__(self, parent, controller):
@@ -20,9 +21,15 @@ class EstoqueView(ttk.Frame):
             self.tree.column(col, anchor="center")
         self.tree.pack(fill="both", expand=True, padx=10, pady=5)
         
-        # Botão de Atualizar Tela
-        btn_refresh = ttk.Button(self, text="Atualizar Tabela", command=self.carregar_dados)
-        btn_refresh.pack(pady=5)
+        # Barra de ações
+        frame_acoes = ttk.Frame(self)
+        frame_acoes.pack(fill="x", padx=10, pady=5)
+
+        btn_refresh = ttk.Button(frame_acoes, text="Atualizar Tabela", command=self.carregar_dados)
+        btn_refresh.pack(side="left", padx=5)
+
+        btn_csv = ttk.Button(frame_acoes, text="⬇ Exportar CSV", command=exportar_estoque)
+        btn_csv.pack(side="right", padx=5)
         
         # Frame de Ajuste Rápido
         frame_ajuste = ttk.LabelFrame(self, text=" Ajustar Quantidade (Estoque) ", padding=10)
